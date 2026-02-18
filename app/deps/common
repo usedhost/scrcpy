@@ -55,12 +55,6 @@ INSTALL_DIR="$WORK_DIR/install"
 
 mkdir -p "$INSTALL_DIR" "$SOURCES_DIR" "$WORK_DIR"
 
-checksum() {
-    local file="$1"
-    local sum="$2"
-    echo "$file: verifying checksum..."
-    echo "$sum  $file" | shasum -a256 -c
-}
 
 get_file() {
     local url="$1"
