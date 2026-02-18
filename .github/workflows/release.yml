@@ -504,8 +504,8 @@ jobs:
       - name: Package server
         run: release/package_server.sh
 
-      - name: Generate checksums
-        run: release/generate_checksums.sh
+#      - name: Generate checksums
+#        run: release/generate_checksums.sh
 
       - name: Upload release artifact
         uses: actions/upload-artifact@v4
